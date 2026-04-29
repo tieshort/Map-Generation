@@ -9,6 +9,8 @@ dependencies = [
     "numpy>=2.4.4",
     "opencv-python>=4.13.0.92",
     "pillow>=12.2.0",
+    "rioxarray>=0.22.0",
+    "terratorch>=1.2.6",
     "torch>=2.11.0",
     "torchvision>=0.26.0",
 ]
