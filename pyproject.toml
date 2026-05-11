@@ -5,7 +5,11 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12,<3.13"
 dependencies = [
+    "albumentations>=2.0.8",
+    "braceexpand>=0.1.7",
+    "fsspec>=2026.4.0",
     "jupyter>=1.1.1",
+    "numcodecs==0.15.1",
     "numpy>=2.4.4",
     "opencv-python>=4.13.0.92",
     "pillow>=12.2.0",
@@ -13,4 +17,6 @@ dependencies = [
     "terratorch>=1.2.6",
     "torch>=2.11.0",
     "torchvision>=0.26.0",
+    "webdataset>=1.0.2",
+    "zarr==2.18.0",
 ]
