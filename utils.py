@@ -24,3 +24,19 @@ def build_model_from_registry(
     )
 
     return model
+
+def generate_outputs(
+        model,
+        input_data: list[torch.Tensor],
+        verbose: bool = False,
+        timesteps: int = 10,
+        device: str = 'cpu'
+) -> list:
+    generated = []
+
+    for data_instance in input_data:
+        data = data_instance.to(device)
+        with torch.no_grad():
+            generated.append(model(data, verbose=verbose, timesteps=timesteps))
+
+    return generated
